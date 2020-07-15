@@ -43,12 +43,12 @@ let menuItems = [
 
 // The 'menuMaker' takes an array as its only argument.
 
-const menuData = [menuItems];
-const menuMaker = (text) => {
+const menuData = menuItems;
+const menuMaker = (data) => {
 
   const menu = document.createElement("div");
   let list = document.createElement("ul");
-  let listItem = document.createElement("li");
+  
 
   menu.classList.add("menu");
 
@@ -57,14 +57,34 @@ console.log('menu', menu)
   // Step 2: Inside the function, iterate over the array creating a list item <li> element for each item in the array.
   // Add those items to the <ul>
   
-  // console.log(listItem)
+let itemsArray = data.map((item) => {
+  let listItem = document.createElement("li");
+  console.log('list item', listItem)
+  listItem.textContent = item
+  list.appendChild(listItem)
+})
+console.log('itemsArray', itemsArray)
+console.log('menu items', menuItems)
+console.log('menu data', menuData)
 
+//  menuData.map((item) => {
+//   let listItem = document.createElement("li");
+//      listItem.textContent = `${[item]}`
+//      list.appendChild(listItem)
+//      return listItem
+//   })
+  
 
-  menuData.forEach((item) => {
-     listItem.textContent = `${[item]}`
-     list.appendChild(listItem)
-  })
-  console.log(list)
+//   function appendChildren  (list, listItem)  {
+//   listItem.forEach(function (item)  {
+//   list.appendChild(item)
+// })
+//   }
+  
+// appendChildren(list, listItem)
+
+ 
+  // console.log(list)
   // newList.forEach((item) => {
   //   list.appendChild(item)
   // })
