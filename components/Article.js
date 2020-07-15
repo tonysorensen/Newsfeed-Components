@@ -86,6 +86,15 @@ const data = [
           Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`,
   },
+  {
+    title: "How to add an article and look really cool",
+    date: "Jul 14th, 2020",
+    firstParagraph: `Pok pok asymmetrical distillery subway tile narwhal. Meh DIY lo-fi offal man bun bespoke. Woke poutine lo-fi drinking vinegar, ugh dreamcatcher narwhal tacos distillery. Skateboard post-ironic mixtape church-key listicle, enamel pin iceland echo park craft beer pitchfork retro poutine microdosing. Put a bird on it dreamcatcher yr hoodie williamsburg. Subway tile echo park intelligentsia, blue bottle helvetica normcore shabby chic sustainable pinterest pickled. Drinking vinegar asymmetrical mixtape, yr pitchfork schlitz plaid prism hell of.`,
+
+    secondParagraph: `La croix vinyl bitters, hell of DIY actually knausgaard meggings edison bulb succulents kinfolk sriracha man bun lumbersexual gastropub. Scenester marfa tilde heirloom craft beer. Enamel pin yuccie hammock try-hard semiotics pug. Kogi waistcoat cloud bread 8-bit, selvage meditation forage tilde pop-up man braid disrupt vaporware adaptogen twee poutine. Sustainable affogato selfies, seitan gentrify air plant palo santo vape kitsch. `,
+
+    thirdParagraph: `Normcore narwhal 8-bit, everyday carry 3 wolf moon skateboard pok pok chillwave pinterest fingerstache selfies umami cronut. Franzen cred affogato kogi gastropub whatever distillery. Plaid portland sartorial, lumbersexual kogi PBR&B meggings sriracha semiotics. Cliche asymmetrical bespoke authentic, irony raclette single-origin coffee swag forage aesthetic. Umami pop-up godard venmo viral meditation cliche vexillologist wayfarers 90's gluten-free photo booth marfa mixtape actually.`,
+  },
 ];
 
 /* Step 1: Write a component called 'articleMaker' to create an article. You want your component to return markup like the template below: 
