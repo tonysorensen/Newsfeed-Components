@@ -121,6 +121,10 @@ const articleMaker = (title, date, firstParagraph, secondParagraph, thirdParagra
   const para3 = document.createElement('p')
   const expandButton = document.createElement('span')
 
+  article.classList.add('article')
+  published.classList.add('date')
+  expandButton.classList.add('expandbutton')
+
   article.appendChild(titleh2)
   article.appendChild(published)
   article.appendChild(para1)
@@ -133,7 +137,7 @@ const articleMaker = (title, date, firstParagraph, secondParagraph, thirdParagra
   para1.textContent = firstParagraph
   para2.textContent = secondParagraph
   para3.textContent = thirdParagraph
-
+  expandButton.textContent = '+'
   
 expandButton.addEventListener('click', () => {
   article.classList.toggle('article-open')
