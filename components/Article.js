@@ -111,3 +111,51 @@ const data = [
 
   Step 5: Add a new article to the array. Make sure it is in the same format as the others. Refresh the page to see the new article.
 */
+
+const articleMaker = (title, date, firstParagraph, secondParagraph, thirdParagraph) => {
+  const article = document.createElement('div')
+  const titleh2 = document.createElement('h2')
+  const published = document.createElement('p')
+  const para1 = document.createElement('p')
+  const para2 = document.createElement('p')
+  const para3 = document.createElement('p')
+  const expandButton = document.createElement('span')
+
+  article.appendChild(titleh2)
+  article.appendChild(published)
+  article.appendChild(para1)
+  article.appendChild(para2)
+  article.appendChild(para3)
+  article.appendChild(expandButton)
+
+  titleh2.textContent = title
+  published.textContent = date
+  para1.textContent = firstParagraph
+  para2.textContent = secondParagraph
+  para3.textContent = thirdParagraph
+
+  
+expandButton.addEventListener('click', () => {
+  article.classList.toggle('article-open')
+  console.log('toggled')
+})
+
+return article;
+
+}
+// const articleComponent = articleMaker('title-text', 'date-text', 'firstParagraph-text', 'secondParagraph-text', 'thirdParagraph-text')
+
+const articles = document.querySelector('.articles')
+// articles.appendChild(articleComponent)
+
+data.forEach(data => 
+  articles.appendChild(articleMaker(data.title, data.date, data.firstParagraph, data.secondParagraph, data.thirdParagraph))
+)
+
+
+
+
+
+// cardData.forEach(data => 
+//   container.appendChild(createCard(data.title,data.subtitle,data.content,data.imgsrc))
+// )
